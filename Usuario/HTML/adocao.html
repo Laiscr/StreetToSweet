@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Adoção</title>
+    <link rel="stylesheet" href="../CSS/paginaInicial.css" />
+    <link rel="stylesheet" href="../CSS/adocao.css" />
+    <!-- Ícones do google -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar-main">
+        <img src="../../imagens/logo.png" alt="Logo" />
+      </div>
+      <div class="top-bar-secondary"></div>
+    </header>
+
+    <div class="summary-text">
+      <a href="paginaInicial.html" class="back"
+        ><span class="material-symbols-outlined">arrow_circle_left</span></a
+      >
+      <h1 class="summary-title">Adoção</h1>
+      <p class="summary-subtitle">
+        Confira os animais disponíveis para adoção!
+      </p>
+    </div>
+
+    <div class="animals-button-container" id="animal-list"></div>
+
+    <!-- Estrutura do Modal (Pop-up) -->
+    <div id="animal-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-body">
+          <img id="modal-animal-image" src="" alt="Foto do animal" />
+          <div class="modal-info">
+            <h2 id="modal-animal-name"></h2>
+            <p>
+              <strong>Gênero:</strong> <span id="modal-animal-gender"></span>
+            </p>
+            <p><strong>Idade:</strong> <span id="modal-animal-age"></span></p>
+            <p><strong>Porte:</strong> <span id="modal-animal-size"></span></p>
+            <p>
+              <strong>Castrado:</strong>
+              <span id="modal-animal-neutered"></span>
+            </p>
+            <p>
+              <strong>Vacinado:</strong>
+              <span id="modal-animal-vaccinated"></span>
+            </p>
+            <p>
+              <strong>Temperamento:</strong>
+              <span id="modal-animal-temperament"></span>
+            </p>
+          </div>
+        </div>
+        <p class="modal-contact">
+          <strong
+            >Entre em contato pelo telefone (35) 99999-8888 e agende uma
+            visita!</strong
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="../JS/adocao.js"></script>
+  </body>
+</html>

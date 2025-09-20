@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="../CSS/paginaInicial.css" />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <!-- Ícones do google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+
+  <body class="login-bg">
+    <header>
+      <div class="top-bar-main">
+        <img src="../../imagens/logo.png" alt="Logo" />
+      </div>
+      <div class="top-bar-secondary"></div>
+    </header>
+
+    <div class="summary-text">
+      <a href="paginaInicial.html" class="back"><span class="material-symbols-outlined">arrow_circle_left</span></a>
+    </div>
+
+    <!-- cenário com pegadas + logo grande à direita -->
+    <main class="login-stage">
+      <!-- card de login -->
+      <section class="login-card">
+        <h2>Bem vindo ao <span class="accent">LOGIN</span></h2>
+        <p class="subtitle">Preencha os dados de login para acessar</p>
+
+        <form id="loginForm" autocomplete="on">
+          <label class="field">
+            <span>Usuário (email)</span>
+            <div class="input-wrap">
+              <input
+                type="email"
+                id="email"
+                placeholder="exemplo@dominio.com"
+                required
+              />
+              <span class="icon"><span class="material-symbols-outlined">person</span></span>
+            </div>
+          </label>
+
+          <label class="field">
+            <span>Senha</span>
+            <div class="input-wrap">
+              <input
+                type="password"
+                id="password"
+                placeholder="••••••••"
+                required
+              />
+              <button
+                type="button"
+                class="icon btn-eye"
+                id="togglePwd"
+                aria-label="Mostrar/ocultar senha"
+              >
+              <span class="icon"><span class="material-symbols-outlined">visibility</span></span>
+              </button>
+            </div>
+          </label>
+
+          <button class="btn-login" type="submit">ENTRAR</button>
+          <p class="error" id="errorBox" role="alert" aria-live="polite"></p>
+        </form>
+
+        <div class="helper-links">
+          <a id="forgotLink" href="#">Esqueci minha senha</a>
+        </div>
+      </section>
+
+      <!-- logo redondo à direita (pode ser imagem ou CSS) -->
+      <div class="login-logo">
+        <img src="../../imagens/logo-redondo.png" alt="Street To Sweet" />
+      </div>
+    </main>
+
+    <!-- O script de login é um módulo, pois usa 'import' do Firebase. -->
+    <script type="module" src="../JS/login.js"></script>
+  </body>
+</html>

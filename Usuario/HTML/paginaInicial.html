@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="../CSS/paginaInicial.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script defer src="../JS/paginaInicial.js"></script>
+  </head>
+
+  <body>
+    <!-- Faixa do título; deixar igual para todas as páginas -->
+    <header>
+      <div class="top-bar-main">
+        <img src="../../imagens/logo.png" alt="Logo" />
+
+        <!-- Ícone de usuário -->
+        <a href="login.html" class="user-icon"><span class="material-symbols-outlined">account_circle</span></a>
+      </div>
+      <div class="top-bar-secondary"></div>
+    </header>
+
+    <!-- Carrossel -->
+    <div class="carousel">
+      <div class="slides">
+        <img src="../../imagens/foto1.jpeg" alt="Foto 1" />
+        <img src="../../imagens/foto2.jpeg" alt="Foto 2" />
+        <img src="../../imagens/foto3.jpeg" alt="Foto 3" />
+        <img src="../../imagens/foto4.jpeg" alt="Foto 4" />
+        <img src="../../imagens/foto5.jpeg" alt="Foto 5" />
+      </div>
+      <!-- Controles -->
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+      <div class="dots"></div>
+    </div>
+
+    <!-- Botões largos -->
+    <!-- TODOS OS TEXTOS E IMAGENS DEVEM VIR DO BD (APENAS EXEMPLIFICADO ATÉ O MOMENTO) -->
+    <div class="button-container">
+      <a href="adocao.html">
+        <img src="../../imagens/iconeAdocao.png" alt="Ícone de Adoção" />
+        <div class="button-text-container">
+          <span class="button-title">Adote um animal</span>
+          <span class="button-subtitle">Confira os animais disponíveis para adoção!</span>
+        </div>
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_Z0ExslhkTjMBFYVTPJA4qE6mhJFM81SiVlRYQChkkFyHfA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+        <img src="../../imagens/iconeDenuncias.png" alt="Ícone de Denuncias" />
+        <div class="button-text-container">
+          <span class="button-title">Canal de Denúncias</span>
+          <span class="button-subtitle"
+            >Denuncie situações de maus tratos e abandono!</span
+          >
+        </div>
+      </a>
+      <a href="campanhas.html">
+        <img src="../../imagens/iconeCampanhas.png" alt="Ícone de Campanhas" />
+        <div class="button-text-container">
+          <span class="button-title">Campanhas de vacinação e castração</span>
+          <span class="button-subtitle">Confira as datas das próximas campanhas!</span>
+        </div>
+      </a>
+      <a href="trabalhos.html">
+        <img src="../../imagens/iconeTrabalhos.png" alt="Ícone de Trabalhos Realizados" />
+        <div class="button-text-container">
+          <span class="button-title">Trabalhos Realizados</span>
+          <span class="button-subtitle">Acompanhe os trabalhos realizados pela Associação!</span>
+        </div>
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfM2Ccj5_VD3u4FiVVbSRytle4OwPLAvtLNHD4TqkPz2Q5k8w/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+        <img src="../../imagens/iconeVoluntarios.png" alt="Ícone de Voluntário" />
+        <div class="button-text-container">
+          <span class="button-title">Seja um voluntário</span>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column footer-donations">
+          <h4>Seja um colaborador!</h4>
+          <div class="donation-content">
+            <img src="../../imagens/qr-code.png" alt="QR Code para doação PIX" />
+            <div class="donation-text">
+              <p>
+                Para auxilio financeiro, escaneie o QR Code ao lado ou envie um pix para o CNPJ 06.332.442/0001-11.
+              </p>
+              <p>
+                Para doação de mantimentos, confira a lista dos itens necessários <a href="#" id="open-mantimentos-modal" style="color: blue; text-decoration: underline;">clicando aqui</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h4>Informações de contato</h4>
+          <p><strong>Apoio animal:</strong> (35) 99999-9999</p>
+          <div class="social-icons">
+            <div class="social-item">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+              <span>Sociedade Protetora dos Animais de SRS - MG</span>
+            </div>
+            <div class="social-item">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.765.297 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.297-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.314.935 20.644.523 19.86.227c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.056 1.17-.249 1.805-.413 2.227-.217.562-.477.96-.896 1.381-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.056-1.805-.249-2.227-.413-.562-.217-.96-.477-1.381-.896-.419-.42-.679-.819-.896-1.381-.165-.422-.36-1.057-.413-2.227-.055-1.266-.07-1.646-.07-4.85s.015-3.585.07-4.85c.055-1.17.249-1.805.413-2.227.217-.562.477.96.896-1.381.42-.419.819.679 1.381-.896.422-.165 1.057.36 2.227.413C8.415 2.175 8.797 2.16 12 2.16zm0 5.48c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7.16c-1.473 0-2.66-1.187-2.66-2.66s1.187-2.66 2.66-2.66 2.66 1.187 2.66 2.66-1.187 2.66-2.66 2.66zm6.336-7.74c-.777 0-1.406.63-1.406 1.406s.63 1.406 1.406 1.406 1.406-.63 1.406-1.406c0-.777-.63-1.406-1.406-1.406z"/></svg>
+              <span>@spasrsmg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column footer-logo">
+          <img src="../../imagens/logoONG.png" alt="Logo ONG" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Estrutura do Modal de Mantimentos -->
+    <div id="mantimentos-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Itens para Doação</h2>
+        <p>Agradecemos seu interesse em doar! A associação é mantida por meio de doações da comunidade e, por isso, seu apoio é de extrema importância para a causa. Precisamos principalmente dos seguintes itens:</p>
+        <ul>
+          <li>Ração para cães e gatos (filhotes e adultos)</li>
+          <li>Areia higiênica para gatos</li>
+          <li>Vermífugos e antipulgas</li>
+          <li>Materiais de limpeza (água sanitária, desinfetante)</li>
+          <li>Jornais velhos e cobertores</li>
+          <li>Brinquedos</li>
+          <li>Vasilhas de água e comida</li>
+        </ul>
+        <p><strong>As doações podem ser entregues em nossa sede.</strong></p>
+      </div>
+    </div>
+  </body>
+</html>
